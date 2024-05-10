@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 // rotta con funzione nuovaPagina()
-Route::get('/nuova-pagina', [PageController::class, 'nuovaPagina'])->name('nuova-pagina');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/books', [PageController::class, 'books'])->name('books');
+
 
 
 
