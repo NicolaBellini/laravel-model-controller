@@ -1,0 +1,32 @@
+@import "bootstrap";
+.container {
+    margin-bottom: 150px;
+    .card {
+        background-color: rgba(215, 215, 215, 0.5) !important;
+        border: none !important;
+        transition: all 0.3s ease !important;
+        backdrop-filter: blur(10px) !important;
+        -webkit-backdrop-filter: blur(10px) !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+        color: #ffffff !important;
+        &:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+        }
+        .card-title {
+            color: #4f4f4f !important;
+        }
+        .card-subtitle {
+            color: #424242 !important;
+        }
+        .card-text {
+            color: #4d4d4d !important;
+        }
+        .card-link {
+            color: #2b2b2b !important;
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+    }
+}

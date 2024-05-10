@@ -10,17 +10,20 @@ use App\Models\Movie;
 class PageController extends Controller
 {
     public function index(){
-
-        $movies = Movie::all();
-        // dd( $movies);
-
-        return view('home', compact('movies'));
+        return view('home');
     }
 
     public function about(){
         return view('about');
     }
-      public function books(){
-        return view('books');
+    public function movies(){
+          $movies = Movie::all();
+        return view('movies', compact('movies'));
+    }
+    public function movieDetail($id) {
+        $movie = Movie::find($id);
+        return view('movie_details', compact('movie'));
     }
 }
+
+

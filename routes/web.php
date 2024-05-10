@@ -20,7 +20,10 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 
 // rotta con funzione nuovaPagina()
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/books', [PageController::class, 'books'])->name('books');
+Route::get('/movies', [PageController::class, 'movies'])->name('movies');
+Route::get('/movies_details/{id}', [PageController::class, 'movieDetail'])->name('moviesDetails');
+
+
 
 
 
